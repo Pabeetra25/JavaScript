@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.seal() Vs Object.freeze()</title>
+    <script src="script.js"></script>
+</head>
+<body style="font-family: cursive;">
+    <h1>Object.seal() Vs Object.freeze()</h1>
+    <h4>Object.seal() provides a way to lock down an object’s properties while still allowing modifications to their values. </h4>
+    <ol><li>Sealing an Object:
+        <ul><li>It prevents new properties from being added to the object.</li>
+        <li>Existing properties become non-configurable (cannot be removed or have their enumerability and configurability changed).</li></ul>
+    </li>
+<li>Behavior:
+    <ul><li>Values of existing properties can still be changed if they are writable.</li>
+    <li>The method returns the same object that was passed in.</li></ul>
+</li></ol>
+
+<h4>Object.freeze() locks down an object, making it read-only and preventing any modifications.</h4>
+</body>
+</html>
